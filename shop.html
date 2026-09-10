@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — LUMEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce-bar">FREE EXPRESS SHIPPING ON ORDERS OVER ₹15,000 &nbsp;·&nbsp; 7-DAY NO-QUESTIONS RETURNS</div>
+
+<header class="header">
+  <div class="container header__row">
+    <a href="index.html" class="brand"><span class="brand__mark">L</span><span>LUMEN<span class="brand__sub">Curated Technology</span></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="is-current">Shop</a>
+      <a href="shop.html?category=Smartphones">Smartphones</a>
+      <a href="shop.html?category=Laptops%20%26%20Computers">Laptops</a>
+      <a href="shop.html?category=Audio">Audio</a>
+    </nav>
+    <div class="header__search">
+      <form data-search-form class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search phones, laptops, audio…" aria-label="Search products"></form>
+    </div>
+    <div class="header__icons">
+      <button class="icon-btn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="badge badge--hidden" data-wishlist-count>0</span></a>
+      <a href="cart.html" class="icon-btn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge badge--hidden" data-cart-count>0</span></a>
+      <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="container mobile-nav__inner">
+      <form data-search-form class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search products…"></form>
+      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a>
+    </div>
+  </div>
+</header>
+
+<div class="container breadcrumbs">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Shop</span>
+</div>
+
+<main>
+  <div class="container">
+    <div class="shop-layout">
+
+      <aside class="filter-panel">
+        <h3>Filters</h3>
+        <p style="font-size:12.5px;color:#a08a83;margin:2px 0 4px;">Refine your search</p>
+
+        <details class="filter-group" open>
+          <summary>Category</summary>
+          <div id="category-filters" style="margin-top:8px;"></div>
+        </details>
+
+        <details class="filter-group" open>
+          <summary>Price range</summary>
+          <div class="price-range-row">
+            <input type="number" id="price-min" placeholder="Min" min="0">
+            <span>–</span>
+            <input type="number" id="price-max" placeholder="Max" min="0">
+          </div>
+        </details>
+
+        <details class="filter-group">
+          <summary>Rating</summary>
+          <div id="rating-filters" style="margin-top:8px;"></div>
+        </details>
+
+        <details class="filter-group">
+          <summary>Brand</summary>
+          <div id="brand-filters" style="margin-top:8px;"></div>
+        </details>
+
+        <details class="filter-group">
+          <summary>Availability</summary>
+          <label class="filter-option"><input type="checkbox" id="in-stock-only"> In stock only</label>
+        </details>
+
+        <button class="btn btn--outline btn--block" id="clear-filters">Clear all filters</button>
+      </aside>
+
+      <section>
+        <h1 style="font-family:var(--font-display);font-size:28px;margin:0 0 18px;" id="shop-title">All Products</h1>
+
+        <div class="active-filters" id="active-filters"></div>
+
+        <div class="shop-toolbar">
+          <p class="shop-toolbar__count" id="result-count">Showing 24 products</p>
+          <div class="shop-toolbar__sort">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest</option>
+              <option value="bestselling">Best Selling</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" style="display:none;">
+          <i class="fa-solid fa-magnifying-glass-minus"></i>
+          <h3>No products match those filters</h3>
+          <p>Try widening your price range or clearing a filter.</p>
+        </div>
+        <div class="pagination" id="pagination"></div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="brand" style="color:var(--blush)"><span class="brand__mark">L</span><span>LUMEN</span></a>
+      <p>A boutique electronics store for people who keep their devices longer than a year. Curated, not warehoused.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping Info</a></li><li><a href="#">Returns</a></li><li><a href="#">Track Order</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Warranty</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 LUMEN Technology Pvt. Ltd. All rights reserved.</span>
+    <div class="payment-icons"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-google-pay"></i><i class="fa-solid fa-money-bill-wave"></i></div>
+  </div>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/products.js"></script>
+<script src="js/store.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

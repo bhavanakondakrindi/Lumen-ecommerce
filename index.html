@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMEN — Curated Technology</title>
+<meta name="description" content="LUMEN is a boutique electronics store for phones, laptops, audio, cameras, wearables and smart home devices — chosen, not just stocked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce-bar">FREE EXPRESS SHIPPING ON ORDERS OVER ₹15,000 &nbsp;·&nbsp; 7-DAY NO-QUESTIONS RETURNS</div>
+
+<header class="header">
+  <div class="container header__row">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">L</span>
+      <span>LUMEN<span class="brand__sub">Curated Technology</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="is-current">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?category=Smartphones">Smartphones</a>
+      <a href="shop.html?category=Laptops%20%26%20Computers">Laptops</a>
+      <a href="shop.html?category=Audio">Audio</a>
+    </nav>
+    <div class="header__search">
+      <form data-search-form class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search phones, laptops, audio…" aria-label="Search products">
+      </form>
+    </div>
+    <div class="header__icons">
+      <button class="icon-btn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge badge--hidden" data-wishlist-count>0</span>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge badge--hidden" data-cart-count>0</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="container mobile-nav__inner">
+      <form data-search-form class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search products…"></form>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__row">
+      <div>
+        <p class="hero__eyebrow">The Autumn Technology Edit</p>
+        <h1>Technology, <em>considered.</em></h1>
+        <p>LUMEN selects a small number of phones, laptops, and audio pieces each season — chosen for how they feel to use every day, not just the spec sheet.</p>
+        <div class="hero__ctas">
+          <a href="shop.html" class="btn btn--amber btn--lg">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="shop.html?category=Smartphones" class="btn btn--outline btn--lg" style="color:var(--blush);border-color:rgba(249,237,240,.4)">Browse phones</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>24</strong><span>Curated products</span></div>
+          <div><strong>4.6★</strong><span>Average rating</span></div>
+          <div><strong>48h</strong><span>Express delivery</span></div>
+        </div>
+      </div>
+      <div class="hero__spotlight">
+        <div class="hero__glow"></div>
+        <div class="hero__card">
+          <img src="images/iphone-16-pro.jpg" alt="iPhone 16 Pro" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <div class="hero__card-info">
+            <div>
+              <h3>iPhone 16 Pro</h3>
+              <span class="spec">128GB · A18 Pro</span>
+            </div>
+            <span class="hero__card-price">₹99,900</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY STRIP -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">Browse</p><h2>Shop by category</h2></div>
+      </div>
+      <div class="cat-strip" data-reveal>
+        <a href="shop.html?category=Smartphones"><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a>
+        <a href="shop.html?category=Laptops%20%26%20Computers"><i class="fa-solid fa-laptop"></i>Laptops</a>
+        <a href="shop.html?category=Gaming%20Accessories"><i class="fa-solid fa-gamepad"></i>Gaming</a>
+        <a href="shop.html?category=Smart%20Home"><i class="fa-solid fa-house-signal"></i>Smart Home</a>
+        <a href="shop.html?category=Cameras"><i class="fa-solid fa-camera"></i>Cameras</a>
+        <a href="shop.html?category=Audio"><i class="fa-solid fa-headphones"></i>Audio</a>
+        <a href="shop.html?category=Wearables"><i class="fa-solid fa-clock"></i>Wearables</a>
+        <a href="shop.html?category=Computer%20Accessories"><i class="fa-solid fa-keyboard"></i>Accessories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">This week</p><h2>Featured products</h2></div>
+        <a href="shop.html" class="btn btn--outline">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid" id="featured-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- TRENDING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">Right now</p><h2>Trending products</h2></div>
+        <a href="shop.html?sort=popularity" class="btn btn--outline">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid" id="trending-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- PROMO STRIP -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="promo-strip" data-reveal>
+        <div class="promo-tile promo-tile--1">
+          <span>Limited time</span>
+          <h3>Up to 20% off audio</h3>
+        </div>
+        <div class="promo-tile promo-tile--2">
+          <span>New arrivals</span>
+          <h3>Season's latest gear</h3>
+        </div>
+        <div class="promo-tile promo-tile--3">
+          <span>Members</span>
+          <h3>Free express shipping</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">Most loved</p><h2>Best sellers</h2></div>
+        <a href="shop.html?sort=bestselling" class="btn btn--outline">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid" id="bestseller-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">Just landed</p><h2>New arrivals</h2></div>
+        <a href="shop.html?sort=newest" class="btn btn--outline">View all <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid" id="new-grid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow" style="color:var(--cognac)">Word of mouth</p><h2 style="color:var(--blush)">What customers say</h2></div>
+      </div>
+      <div class="testimonials" data-reveal>
+        <div class="testimonial">
+          <span class="stars">★★★★★</span>
+          <p>"The Halcyon 15 Pro arrived a day early, and the packaging alone felt like unboxing a small piece of furniture."</p>
+          <div class="testimonial__who"><div class="testimonial__avatar">R</div><div><strong>Rhea Kapoor</strong><span>Hyderabad</span></div></div>
+        </div>
+        <div class="testimonial">
+          <span class="stars">★★★★★</span>
+          <p>"Customer support actually knew the specs of the laptop I was asking about. That hasn't happened to me in years."</p>
+          <div class="testimonial__who"><div class="testimonial__avatar">A</div><div><strong>Arjun Mehta</strong><span>Bengaluru</span></div></div>
+        </div>
+        <div class="testimonial">
+          <span class="stars">★★★★☆</span>
+          <p>"Wishlist and cart synced perfectly between my laptop and phone. Small thing, but it made the whole site feel considered."</p>
+          <div class="testimonial__who"><div class="testimonial__avatar">S</div><div><strong>Sana Iyer</strong><span>Chennai</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section--emerald">
+    <div class="container newsletter" data-reveal>
+      <div>
+        <p class="eyebrow" style="color:var(--cognac)">Stay in the loop</p>
+        <h2>Get first look at new drops</h2>
+        <p>One email a fortnight. New products, restocks, and the occasional discount code — nothing else.</p>
+      </div>
+      <form data-newsletter-form>
+        <input type="email" required placeholder="you@email.com" aria-label="Email address">
+        <button type="submit" class="btn btn--amber">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="brand" style="color:var(--blush)"><span class="brand__mark">L</span><span>LUMEN</span></a>
+      <p>A boutique electronics store for people who keep their devices longer than a year. Curated, not warehoused.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping Info</a></li><li><a href="#">Returns</a></li><li><a href="#">Track Order</a></li></ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Warranty</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 LUMEN Technology Pvt. Ltd. All rights reserved.</span>
+    <div class="payment-icons">
+      <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-google-pay"></i><i class="fa-solid fa-money-bill-wave"></i>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/products.js"></script>
+<script src="js/store.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
