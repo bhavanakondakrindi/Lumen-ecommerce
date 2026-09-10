@@ -1,0 +1,12 @@
+<svg width="700" height="700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="700" fill="#f9edf0"/>
+  <rect x="0.5" y="0.5" width="699" height="699" fill="none" stroke="#e3d3ce"/>
+  <g transform="translate(350,300)" fill="none" stroke="#c3955b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-90" y="-65" width="180" height="130" rx="14"/>
+    <circle cx="0" cy="0" r="34"/>
+    <circle cx="0" cy="0" r="10" fill="#c3955b"/>
+    <rect x="45" y="-50" width="24" height="14" rx="4" fill="#c3955b" stroke="none"/>
+  </g>
+  <text x="350" y="440" font-family="IBM Plex Mono, monospace" font-size="20" fill="#261311" text-anchor="middle">PHOTO COMING SOON</text>
+  <text x="350" y="470" font-family="Work Sans, sans-serif" font-size="14" fill="#8a746d" text-anchor="middle">See images/README.md</text>
+</svg>
