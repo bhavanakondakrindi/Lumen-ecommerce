@@ -41,13 +41,7 @@ rather use `.png`.
 - **The manufacturer's own product page** — right-click → "Save Image As…"
   works fine for a personal/demo project like this one.
 
-If you ever plan to launch this site publicly or commercially, double-check
-the license terms of whichever image you use — press/editorial images are
-usually fine for reviews and demos, but commercial resale sites should use
-photos you have explicit rights to use (your own product photography, or a
-licensed feed from the actual retailer/brand).
-
-## Exact filenames needed
+## Exact filenames 
 
 | Product | Filename |
 |---|---|
