@@ -31,16 +31,6 @@ listed below. JPG or PNG both work — just keep it as `.jpg` to match what's
 wired into the code, or edit the `image:` field in `js/products.js` if you'd
 rather use `.png`.
 
-### Where to get real photos, safely
-- **Manufacturer newsroom / press pages** — Apple Newsroom, Samsung Newsroom,
-  Sony Press Centre, etc. usually offer downloadable press images intended
-  for exactly this kind of editorial/demo use.
-- **Wikimedia Commons** (commons.wikimedia.org) — search the product name;
-  most current electronics have openly-licensed product photos there,
-  safe to reuse with attribution.
-- **The manufacturer's own product page** — right-click → "Save Image As…"
-  works fine for a personal/demo project like this one.
-
 ## Exact filenames 
 
 | Product | Filename |
